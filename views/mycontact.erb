@@ -1,0 +1,17 @@
+<body>
+<h1><%= @foundcontact.contactname() %>'s main phone number:</h1>
+<h2><%= @foundcontact.number() %></h2>
+
+<h4>More of <%= @foundcontact.contactname() %>'s phone numbers:</h4>
+
+  <form action="/mycontact" method="post">
+    <label for="phonetype"></label>
+    <input id="phonetype" placeholder="work phone" name="phonetype" type="phonetype">
+
+    <label for="morenumbers"></label>
+    <input id="morenumbers" placeholder="###-###-####" name="morenumbers" type="text">
+    <button type="submit">Add to <%= @foundcontact.contactname() %>'s contact page</button>
+  </form>
+
+<a href="/">Return to Contacts</a>
+</body>
