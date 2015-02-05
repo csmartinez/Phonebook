@@ -5,12 +5,12 @@
   <form action="/phone" method="post">
     <input id='contact_id' name='contact_id' type='hidden' value='<%= @contact.id() %>'>
 
-    <label for="phone_type"></label>
+    <label for="phone_type">Phone Type</label>
     <input id="phone_type" placeholder="work phone" name="phone_type" type="text">
 
-    <label for="phone_number"></label>
+    <label for="phone_number">Phone Number</label>
     <input id="phone_number" placeholder="###-###-####" name="phone_number" type="text">
-    <button type="submit">Add to <%= @contact.contactname() %>'s contact page</button>
+    <button type="submit" class="btn btn-danger">Add Number</button>
   </form>
 
   <ul>

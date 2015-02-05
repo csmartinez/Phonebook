@@ -19,4 +19,8 @@ class Phone
     define_method(:save) do
       @@allnumbers.push(self)
     end
+
+    define_singleton_method(:clear) do
+      @@allnumbers = []
+    end
   end
