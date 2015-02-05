@@ -1,0 +1,23 @@
+<h1><%= @contact.contactname() %>'s contact page</h1>
+
+<h4>More of <%= @contact.contactname() %>'s phone numbers:</h4>
+
+  <form action="/phone" method="post">
+    <input id='contact_id' name='contact_id' type='hidden' value='<%= @contact.id() %>'>
+
+    <label for="phone_type"></label>
+    <input id="phone_type" placeholder="work phone" name="phone_type" type="text">
+
+    <label for="phone_number"></label>
+    <input id="phone_number" placeholder="###-###-####" name="phone_number" type="text">
+    <button type="submit">Add to <%= @contact.contactname() %>'s contact page</button>
+  </form>
+
+  <ul>
+    <% @contact.phones().each() do |numbers| %>
+      <li><h4><%= numbers.phone_type() %> <%= numbers.phone_number() %></h4></li>
+    <% end %>
+  </ul>
+
+
+<a href="/">Return to Contacts</a>

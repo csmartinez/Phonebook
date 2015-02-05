@@ -1,5 +1,5 @@
 ##Phonebook
-  Stores and lists contact name and corresponding phone number
+  Stores and lists contact name and corresponding phone number. Visual outline for 'add more numbers' functionality established but incomplete. Clear button to clear entire list of contact names and numbers.
   Ruby version 2.2
 
 ##Project Setup
@@ -19,7 +19,7 @@ tests for ruby methods can be run using the rspec gem
 
 ##Motivation
 
-To practice creating a Ruby class and methods, Hash class, attr_reader, and id function which operate on that class. To use the defined class in the sinatra app.
+**Class assignment** To practice creating a Ruby class and methods, Hash class, attr_reader, and id function which operate on that class. To use the defined class in the sinatra app.
 
 ##License
 
