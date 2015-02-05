@@ -4,10 +4,8 @@ body {
 .container {
   width: 700px;
 }
-a {
-  color: black;
-}
+
 a:hover, a:focus {
-    text-decoration:underline;
-    color: red;
+    text-decoration: underline;
+    color: black;
 }

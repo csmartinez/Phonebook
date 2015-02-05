@@ -1,18 +1,18 @@
-<h1><img src="http://www2.psd100.com/ppp/2013/11/0501/phone-icon-1105180731.png" alt="phone icon">My Phonebook <small>Add a contact here!</small></h1>
+<h1><img src="http://www2.psd100.com/ppp/2013/11/0501/phone-icon-1105180731.png" alt="phone icon"><strong>My Phonebook</strong> <small>Add a contact here</small></h1>
 
   <form action="/contacts" method="post">
     <label for="contactname">Full name:</label>
     <input id="contactname" placeholder="Keanna Bertin" name="contactname" type="text">
-      <button name="submit" class="btn btn-danger">Add contact</button>
+      <button name="submit" class="btn btn-primary">Add contact</button>
     </form>
 
-    <h4>Here are your contacts! Click to view or add more numbers!</h4>
+    <h5><strong>Click to view or add more numbers!<strong></h5>
 
       <ul>
         <% @contacts.each() do |contact| %>
-          <li><a href="/contacts/<%= contact.id() %>"> <%= contact.contactname() %> </a></li>
+          <li><h4><a href="/contacts/<%= contact.id() %>"> <%= contact.contactname() %> </a><h4></li>
         <% end %>
       </ul>
 
-  <form action="/clear"><button type="submit" class="btn btn-danger">Erase all contacts</button>
+  <form action="/clear"><button type="submit" class="btn btn-primary">Erase all contacts</button>
   </form>

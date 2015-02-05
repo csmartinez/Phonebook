@@ -1,16 +1,14 @@
-<h1><%= @contact.contactname() %>'s contact page</h1>
-
-<h4>More of <%= @contact.contactname() %>'s phone numbers:</h4>
+<h1><strong><%= @contact.contactname() %>'s contact page</strong><small> <%= @contact.contactname() %>'s phone numbers: </small></h1>
 
   <form action="/phone" method="post">
     <input id='contact_id' name='contact_id' type='hidden' value='<%= @contact.id() %>'>
 
-    <label for="phone_type">Phone Type</label>
+    <label for="phone_type">Phone Type: </label>
     <input id="phone_type" placeholder="work phone" name="phone_type" type="text">
 
-    <label for="phone_number">Phone Number</label>
+    <label for="phone_number">Phone Number: </label>
     <input id="phone_number" placeholder="###-###-####" name="phone_number" type="text">
-    <button type="submit" class="btn btn-danger">Add Number</button>
+    <button type="submit" class="btn btn-primary">Add Number</button>
   </form>
 
   <ul>

@@ -1,5 +1,6 @@
 ##Phonebook
-  Stores and lists contact name and corresponding phone number. Visual outline for 'add more numbers' functionality established but incomplete. Clear button to clear entire list of contact names and numbers.
+  Stores and lists contact names and corresponding phone numbers with phone type. Clear button to clear entire list of contact names and numbers.
+
   Ruby version 2.2
 
 ##Project Setup
