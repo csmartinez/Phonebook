@@ -12,8 +12,8 @@
   </form>
 
   <ul>
-    <% @contact.phones().each() do |numbers| %>
-      <li><h4><%= numbers.phone_type() %> <%= numbers.phone_number() %></h4></li>
+    <% @contact.phones().each() do |number| %>
+      <li><h4><%= number.phone_type() %> <%= number.phone_number() %></h4></li>
     <% end %>
   </ul>
 
